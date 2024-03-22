@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   z-index: -2;
+  opacity: 1;
 }
 
 .cloud {
@@ -107,7 +108,15 @@
   }
 }
 
+
 /* THE SIMPSONS */
+
+.buttonSimpsons{
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+}
+
 .simpsons {
   width: 23vw;
   height: 25vh;

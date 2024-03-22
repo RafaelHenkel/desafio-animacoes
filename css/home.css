@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  animation: logoAnimate 2s forwards ease-out;
+  width: 25%;
+}
+
+@keyframes logoAnimate {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+.homer {
+  position: absolute;
+  width: 40vw;
+  height: 80vh;
+  transform: scaleX(-1);
+  right: 70%;
+  top: 20%;
+  animation: homerAnimate 2s forwards ease-out;
+}
+
+@keyframes homerAnimate {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 20%;
+  }
+}
+.bart {
+  position: absolute;
+  width: 30vw;
+  left: 79.5%;
+  top: 40%;
+  animation: bartAnimate 2s forwards ease-out;
+}
+
+@keyframes bartAnimate {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 79.5%;
+  }
+}
+
+.family {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.containerInfo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: rgb(255, 223, 0);
+  text-shadow: 1px 2px 2px black;
+  width: 40vw;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  animation: textAnimate 4s forwards ease-out;
+}
+
+@keyframes textAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+button {
+  position: absolute;
+  left: 46.5%;
+  top: 56%;
+  width: 6vw;
+  height: 6vh;
+  font-size: 1rem;
+  border-radius: 20rem;
+  transition: 1s;
+  animation: buttonAnimate 3s forwards ease;
+}
+@keyframes buttonAnimate {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 56%;
+  }
+}
+button:hover {
+  background-color: black;
+  color: rgb(255, 223, 0);
+}
