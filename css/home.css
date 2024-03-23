@@ -10,7 +10,7 @@
   overflow-y: hidden;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   position: relative;
@@ -19,7 +19,6 @@
 .logo {
   position: absolute;
   animation: logoAnimate 2s forwards ease-out;
-  width: 25%;
 }
 
 @keyframes logoAnimate {
@@ -37,7 +36,6 @@
   height: 80vh;
   transform: scaleX(-1);
   right: 70%;
-  top: 20%;
   animation: homerAnimate 2s forwards ease-out;
 }
 
@@ -52,7 +50,6 @@
 .bart {
   position: absolute;
   width: 30vw;
-  left: 79.5%;
   top: 40%;
   animation: bartAnimate 2s forwards ease-out;
 }
@@ -69,7 +66,6 @@
 .family {
   position: absolute;
   bottom: 0;
-  z-index: 1;
 }
 
 .containerInfo {
@@ -113,9 +109,11 @@ button {
 @keyframes buttonAnimate {
   from {
     top: 80%;
+    z-index: -2;
   }
   to {
     top: 56%;
+    z-index: 1;
   }
 }
 button:hover {
